@@ -33,10 +33,14 @@ if (savedMode) {
   }
 } else {
   document.body.classList.add("light-mode");
-  dark.classList.add("light-mode");
-  nav.classList.add("light-mode");
-  footer.classList.add("light-mode");
-  contact.classList.add("light-mode");
+  try {
+    dark.classList.add("light-mode");
+    nav.classList.add("light-mode");
+    footer.classList.add("light-mode");
+    contact.classList.add("light-mode");
+  } catch (error) {
+    console.log(error)
+  }
   cards.forEach((a) => {
     a.classList.add("light-mode");
   });
@@ -205,7 +209,6 @@ renderTasks();
 
 // ------------------------- < Repos Fetching ------------------------------
 
-
 try {
   document.getElementById("getRepos").addEventListener("click", async () => {
     const apiUrl = document.getElementById("apiInput").value.trim();
@@ -275,4 +278,3 @@ try {
 }
 
 // ------------------------- Repos Fetching >------------------------------
-
