@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="links">
+        <div class="logo">
+          <a href="index.html">YoussifWafy</a>
+        </div>
+        <div class="urls">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="toDo.html">To Do App</a></li>
+            <li><a href="repos.html" class="active">Repos App</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dark">
+        <p>ON / OFF</p>
+      </div>
+    </nav>
+
+    <div class="repos">
+      <div class="title">
+        <h1><span>&lt;</span> Repos Viewer <span>/&gt;</span></h1>
+      </div>
+      <div class="card">
+        <label for="usernameInput">Enter Yout API Github Link:</label>
+        <div class="top">
+          <input type="text" id="apiInput" placeholder="Github API Link"/>
+          <button id="getRepos">Add</button>
+        </div>
+        <p class="details">Copy Link & Put Your Username: https://api.github.com/users/<span>USERNAME</span>/repos</p>
+        <div id="repoContainer"></div>
+        <button id="clearBtn">Clear All Repos</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="left">
+        <div class="title">
+          <h2>Youssif Wafy</h2>
+        </div>
+        <div class="sub">
+          <p>&copy; 2025 By <span>Youssif Wafy</span>. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="rigth">
+        <div class="title">
+          <p>Links</p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="toDo.html">To Do App</a></li>
+            <li><a href="repos.html">Repos App</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
